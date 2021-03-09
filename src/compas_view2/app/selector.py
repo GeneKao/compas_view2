@@ -147,7 +147,7 @@ class Selector:
         """
         rgb_key = self.get_rgb_key()
         self.instances[rgb_key] = obj
-        obj.instance_color = np.array(rgb_key)/255
+        obj._instance_color = np.array(rgb_key)/255
         return rgb_key
 
     def select_one_from_instance_map(self, x, y, instance_map):
@@ -253,7 +253,7 @@ class Selector:
         if update:
             self.app.view.update()
 
-    def start_selection(self, types=None, mode="multi"):
+    def start_selection(self, types=None, mode="multi", returns="data"):
         """Start an interactive selection session.
 
         Parameters
@@ -262,6 +262,8 @@ class Selector:
             the allowed types of object data
         mode : string
             the selection mode of the session, default to "multi"
+        returns : string
+            controls whether to return the objects or the data of objects
 
         Returns
         -------
@@ -280,9 +282,14 @@ class Selector:
         self.wait_for_selection = True
         while self.wait_for_selection:
             time.sleep(0.05)
-        selected_data = [obj._data for obj in self.selected]
+        if returns == "data":
+            selected = [obj._data for obj in self.selected]
+        if returns == "object":
+            selected = [obj for obj in self.selected]
+        else:
+            raise ValueError("must choose to return 'data' or 'object'")
         self.reset()
-        return selected_data
+        return selected
 
     def start_selection_on_plane(self, snap_to_grid=False):
         """Start an interactive selection session to pick a location on the grid plane.

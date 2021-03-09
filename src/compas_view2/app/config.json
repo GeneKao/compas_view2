@@ -26,7 +26,9 @@
                     "items":
                     [
                         {"type": "action", "text": "Shaded", "checked": true, "action": "view_shaded"},
-                        {"type": "action", "text": "Ghosted", "checked": false, "action": "view_ghosted"}
+                        {"type": "action", "text": "Ghosted", "checked": false, "action": "view_ghosted"},
+                        {"type": "action", "text": "Wireframe", "checked": false, "action": "view_wireframe"},
+                        {"type": "action", "text": "Lighted", "checked": false, "action": "view_lighted"}
                     ]
                 },
                 {"type": "separator"},
@@ -77,7 +79,8 @@
                         {"type": "action", "text": "Add Sphere", "action": "add_sphere"},
                         {"type": "action", "text": "Add Torus", "action": "add_torus"}
                     ]
-                }
+                },
+                {"type": "action", "text": "Edit Object", "action": "edit_selected_object"}
             ]
         },
         {
@@ -99,9 +102,6 @@
     ],
     "toolbar":
     [
-        {"type": "action", "text": "Undo", "action": "undo", "icon": "undo-solid.svg"},
-        {"type": "action", "text": "Redo", "action": "redo", "icon": "redo-solid.svg"},
-        {"type": "separator"},
         {"type": "action", "text": "Catpure", "action": "view_capture"},
         {"type": "separator"},
         {"type": "action", "text": "Front", "action": "view_front"},
