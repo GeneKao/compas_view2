@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>compas_view2 - objects</title>
+  
+  <title>compas_view2 - compas_view2.objects</title>
+  
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <meta name="author" content="" />
+  <meta name="author" content="compas-dev" />
   <meta name="description" content="" />
 
   <link rel="shortcut icon" href="../_static/images/compas.ico" type="image/x-icon">
@@ -32,22 +34,31 @@
   <header id="header" class="compas-header d-flex align-items-center">
     <nav class="navbar navbar-expand navbar-dark col flex-column flex-md-row text-center">
       <!-- brand -->
-      <a class="navbar-brand" href="">
-        <img src="../_static/images/compas_icon_white.png" alt="COMPAS Viewers 2" width="48px" height="48px" />
+      <a class="navbar-brand" href="https://compas.dev/compas_view2/">
+        <img src="../_static/images/compas_icon_white.png" alt="COMPAS View2" width="48px" height="48px" />
       </a>
       <!-- brand -->
       <!-- primary -->
       <ul class="navbar-nav">
-        <li class="nav-item active"><a class="nav-link" href="">COMPAS Viewers 2</a></li>
+        <li class="nav-item active"><a class="nav-link" href="https://compas.dev/compas_view2/">COMPAS View2</a></li>
       </ul>
       <!-- primary -->
       <ul class="navbar-nav d-none d-md-flex ml-md-auto">
         <!-- version -->
         
+        <meta id="doc_versions" data-url="https://compas.dev/compas_view2/doc_versions.txt" data-docs="https://compas.dev/compas_view2/">
+        <li class="nav-item nav-versions dropdown">
+          <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            0.4.0
+          </a>
+          <div id="doc_version_list" class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions"></div>
+        </li>
+        
         <!-- version -->
         <!-- social -->
         <li class="nav-item">
-          <a class="nav-link" href="" target="_blank">
+          <a class="nav-link" href="https://github.com/compas-dev/compas_view2" target="_blank">
             <span class="fab fa-github fa-1x"></span>
           </a>
         </li>
@@ -73,19 +84,17 @@
             
               <li class="breadcrumb-item"><a href="../api.html">API Reference</a></li>
             
-              <li class="breadcrumb-item"><a href="compas_view2.html">compas_view2</a></li>
-            
-            <li class="breadcrumb-item active" aria-current="page">objects</li>
+            <li class="breadcrumb-item active" aria-current="page">compas_view2.objects</li>
           </ol>
         </nav>
         
 
         
         
-        <div class="section" id="objects">
-<h1>objects</h1>
-<div class="section" id="geometry">
-<h2>Geometry</h2>
+        <section id="compas-view2-objects">
+<h1>compas_view2.objects</h1>
+<section id="primitives">
+<h2>Primitives</h2>
 <table class="longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -93,24 +102,41 @@
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_view2.objects.PointObject.html#compas_view2.objects.PointObject" title="compas_view2.objects.PointObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PointObject</span></code></a></p></td>
-<td><p></p></td>
+<td><p>Object for displaying COMPAS point geometry.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/compas_view2.objects.LineObject.html#compas_view2.objects.LineObject" title="compas_view2.objects.LineObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LineObject</span></code></a></p></td>
-<td><p></p></td>
+<td><p>Object for displaying COMPAS line geometry.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_view2.objects.BoxObject.html#compas_view2.objects.BoxObject" title="compas_view2.objects.BoxObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoxObject</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/compas_view2.objects.SphereObject.html#compas_view2.objects.SphereObject" title="compas_view2.objects.SphereObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SphereObject</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_view2.objects.TorusObject.html#compas_view2.objects.TorusObject" title="compas_view2.objects.TorusObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TorusObject</span></code></a></p></td>
-<td><p></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_view2.objects.PolylineObject.html#compas_view2.objects.PolylineObject" title="compas_view2.objects.PolylineObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PolylineObject</span></code></a></p></td>
+<td><p>Object for displaying COMPAS Polyline geometry.</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="datastructures">
+</section>
+<section id="shapes">
+<h2>Shapes</h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_view2.objects.BoxObject.html#compas_view2.objects.BoxObject" title="compas_view2.objects.BoxObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoxObject</span></code></a></p></td>
+<td><p>Object for displaying COMPAS box geometry.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas_view2.objects.SphereObject.html#compas_view2.objects.SphereObject" title="compas_view2.objects.SphereObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SphereObject</span></code></a></p></td>
+<td><p>Object for displaying COMPAS sphere geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_view2.objects.TorusObject.html#compas_view2.objects.TorusObject" title="compas_view2.objects.TorusObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TorusObject</span></code></a></p></td>
+<td><p>Object for displaying COMPAS torus geometry.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas_view2.objects.ArrowObject.html#compas_view2.objects.ArrowObject" title="compas_view2.objects.ArrowObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ArrowObject</span></code></a></p></td>
+<td><p>Object for displaying COMPAS arrow geometry.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="datastructures">
 <h2>Datastructures</h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -119,15 +145,19 @@
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_view2.objects.NetworkObject.html#compas_view2.objects.NetworkObject" title="compas_view2.objects.NetworkObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NetworkObject</span></code></a></p></td>
-<td><p></p></td>
+<td><p>Object for displaying COMPAS network data structures.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/compas_view2.objects.MeshObject.html#compas_view2.objects.MeshObject" title="compas_view2.objects.MeshObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshObject</span></code></a></p></td>
-<td><p></p></td>
+<td><p>Object for displaying COMPAS mesh data structures.</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="miscellaneous">
+</section>
+<section id="robots">
+<h2>Robots</h2>
+<p><em>Coming soon</em>…</p>
+</section>
+<section id="miscellaneous">
 <h2>Miscellaneous</h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -135,16 +165,13 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_view2.objects.AxisObject.html#compas_view2.objects.AxisObject" title="compas_view2.objects.AxisObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AxisObject</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/compas_view2.objects.GridObject.html#compas_view2.objects.GridObject" title="compas_view2.objects.GridObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GridObject</span></code></a></p></td>
-<td><p></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_view2.objects.GridObject.html#compas_view2.objects.GridObject" title="compas_view2.objects.GridObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GridObject</span></code></a></p></td>
+<td><p>Object for displaying a grid of lines in the XY plane of the world coordinate system.</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</section>
+</section>
 
         
       </main>
@@ -165,16 +192,25 @@
           <ul class="nav flex-column active">
 <li class="nav-item"><a class="nav-link reference internal" href="../index.html">Introduction</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="../gettingstarted.html">Getting Started</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="../examples.html">Examples</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="../tutorial.html">Tutorial</a></li>
 <li class="nav-item active"><a class="nav-link reference internal" href="../api.html">API Reference</a><ul class="nav flex-column active">
-<li class="nav-item active"><a class="nav-link reference internal" href="compas_view2.html">compas_view2</a><ul class="nav flex-column active">
-<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.app.html">app</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.forms.html">forms</a></li>
-<li class="nav-item active"><a class="nav-link active current reference internal" href="#">objects</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.shaders.html">shaders</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.views.html">views</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.app.html">compas_view2.app</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.forms.html">compas_view2.forms</a></li>
+<li class="nav-item active"><a class="nav-link active current reference internal" href="#">compas_view2.objects</a><ul class="nav flex-column">
+<li class="nav-item"><a class="nav-link reference internal" href="generated/compas_view2.objects.PointObject.html">PointObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="generated/compas_view2.objects.LineObject.html">LineObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="generated/compas_view2.objects.PolylineObject.html">PolylineObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="generated/compas_view2.objects.BoxObject.html">BoxObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="generated/compas_view2.objects.SphereObject.html">SphereObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="generated/compas_view2.objects.TorusObject.html">TorusObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="generated/compas_view2.objects.ArrowObject.html">ArrowObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="generated/compas_view2.objects.NetworkObject.html">NetworkObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="generated/compas_view2.objects.MeshObject.html">MeshObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="generated/compas_view2.objects.GridObject.html">GridObject</a></li>
 </ul>
 </li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.shaders.html">compas_view2.shaders</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.views.html">compas_view2.views</a></li>
 </ul>
 </li>
 <li class="nav-item"><a class="nav-link reference internal" href="../license.html">License</a></li>
@@ -188,9 +224,11 @@
       <div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">
         
         <ul class="nav flex-column" id="compas-toc">
-<li class="nav-item"><a class="nav-link reference internal" href="#">objects</a><ul class="nav flex-column">
-<li class="nav-item"><a class="nav-link reference internal" href="#geometry">Geometry</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#">compas_view2.objects</a><ul class="nav flex-column">
+<li class="nav-item"><a class="nav-link reference internal" href="#primitives">Primitives</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#shapes">Shapes</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#datastructures">Datastructures</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#robots">Robots</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#miscellaneous">Miscellaneous</a></li>
 </ul>
 </li>
@@ -261,7 +299,7 @@
   <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
   URL_ROOT          : '',
-  VERSION           : '0.1.0',
+  VERSION           : '0.4.0',
   COLLAPSE_INDEX    : false,
   FILE_SUFFIX       : '.html',
   HAS_SOURCE        : 'false',

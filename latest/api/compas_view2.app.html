@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>compas_view2 - app</title>
+  
+  <title>compas_view2 - compas_view2.app</title>
+  
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <meta name="author" content="" />
+  <meta name="author" content="compas-dev" />
   <meta name="description" content="" />
 
   <link rel="shortcut icon" href="../_static/images/compas.ico" type="image/x-icon">
@@ -17,11 +19,11 @@
   <link rel="stylesheet" type="text/css" href="../_static/css/compas-reference.css" />
 
   
-    <link rel="next" title="App" href="generated/compas_view2.app.app.App.html" />
+    <link rel="next" title="App" href="generated/compas_view2.app.App.html" />
   
 
   
-    <link rel="prev" title="compas_view2" href="compas_view2.html" />
+    <link rel="prev" title="API Reference" href="../api.html" />
   
 
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
@@ -32,22 +34,31 @@
   <header id="header" class="compas-header d-flex align-items-center">
     <nav class="navbar navbar-expand navbar-dark col flex-column flex-md-row text-center">
       <!-- brand -->
-      <a class="navbar-brand" href="">
-        <img src="../_static/images/compas_icon_white.png" alt="COMPAS Viewers 2" width="48px" height="48px" />
+      <a class="navbar-brand" href="https://compas.dev/compas_view2/">
+        <img src="../_static/images/compas_icon_white.png" alt="COMPAS View2" width="48px" height="48px" />
       </a>
       <!-- brand -->
       <!-- primary -->
       <ul class="navbar-nav">
-        <li class="nav-item active"><a class="nav-link" href="">COMPAS Viewers 2</a></li>
+        <li class="nav-item active"><a class="nav-link" href="https://compas.dev/compas_view2/">COMPAS View2</a></li>
       </ul>
       <!-- primary -->
       <ul class="navbar-nav d-none d-md-flex ml-md-auto">
         <!-- version -->
         
+        <meta id="doc_versions" data-url="https://compas.dev/compas_view2/doc_versions.txt" data-docs="https://compas.dev/compas_view2/">
+        <li class="nav-item nav-versions dropdown">
+          <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            0.4.0
+          </a>
+          <div id="doc_version_list" class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions"></div>
+        </li>
+        
         <!-- version -->
         <!-- social -->
         <li class="nav-item">
-          <a class="nav-link" href="" target="_blank">
+          <a class="nav-link" href="https://github.com/compas-dev/compas_view2" target="_blank">
             <span class="fab fa-github fa-1x"></span>
           </a>
         </li>
@@ -73,38 +84,30 @@
             
               <li class="breadcrumb-item"><a href="../api.html">API Reference</a></li>
             
-              <li class="breadcrumb-item"><a href="compas_view2.html">compas_view2</a></li>
-            
-            <li class="breadcrumb-item active" aria-current="page">app</li>
+            <li class="breadcrumb-item active" aria-current="page">compas_view2.app</li>
           </ol>
         </nav>
         
 
         
         
-        <div class="section" id="app">
-<h1>app</h1>
+        <section id="compas-view2-app">
+<h1>compas_view2.app</h1>
 <table class="longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_view2.app.app.App.html#compas_view2.app.app.App" title="compas_view2.app.app.App"><code class="xref py py-obj docutils literal notranslate"><span class="pre">app.App</span></code></a>([version, width, height, viewmode, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_view2.app.App.html#compas_view2.app.App" title="compas_view2.app.App"><code class="xref py py-obj docutils literal notranslate"><span class="pre">App</span></code></a>([version, width, height, viewmode, …])</p></td>
 <td><p>Viewer app.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/compas_view2.app.controller.Controller.html#compas_view2.app.controller.Controller" title="compas_view2.app.controller.Controller"><code class="xref py py-obj docutils literal notranslate"><span class="pre">controller.Controller</span></code></a>(app)</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_view2.app.selector.Selector.html#compas_view2.app.selector.Selector" title="compas_view2.app.selector.Selector"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selector.Selector</span></code></a>(app)</p></td>
-<td><p>Selector class manages all selection operations for the viewer</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/compas_view2.app.worker.Worker.html#compas_view2.app.worker.Worker" title="compas_view2.app.worker.Worker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">worker.Worker</span></code></a>(fn, *args, **kwargs)</p></td>
-<td><p>Worker instance that runs in a independent thread without blocking the main process</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas_view2.app.Controller.html#compas_view2.app.Controller" title="compas_view2.app.Controller"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Controller</span></code></a>(app)</p></td>
+<td><p>Action controller for the default config file.</p></td>
 </tr>
 </tbody>
 </table>
-</div>
+</section>
 
         
       </main>
@@ -125,16 +128,17 @@
           <ul class="nav flex-column active">
 <li class="nav-item"><a class="nav-link reference internal" href="../index.html">Introduction</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="../gettingstarted.html">Getting Started</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="../examples.html">Examples</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="../tutorial.html">Tutorial</a></li>
 <li class="nav-item active"><a class="nav-link reference internal" href="../api.html">API Reference</a><ul class="nav flex-column active">
-<li class="nav-item active"><a class="nav-link reference internal" href="compas_view2.html">compas_view2</a><ul class="nav flex-column active">
-<li class="nav-item active"><a class="nav-link active current reference internal" href="#">app</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.forms.html">forms</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.objects.html">objects</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.shaders.html">shaders</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.views.html">views</a></li>
+<li class="nav-item active"><a class="nav-link active current reference internal" href="#">compas_view2.app</a><ul class="nav flex-column">
+<li class="nav-item"><a class="nav-link reference internal" href="generated/compas_view2.app.App.html">App</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="generated/compas_view2.app.Controller.html">Controller</a></li>
 </ul>
 </li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.forms.html">compas_view2.forms</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.objects.html">compas_view2.objects</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.shaders.html">compas_view2.shaders</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.views.html">compas_view2.views</a></li>
 </ul>
 </li>
 <li class="nav-item"><a class="nav-link reference internal" href="../license.html">License</a></li>
@@ -148,7 +152,7 @@
       <div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">
         
         <ul class="nav flex-column" id="compas-toc">
-<li class="nav-item"><a class="nav-link reference internal" href="#">app</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#">compas_view2.app</a></li>
 </ul>
 
       </div>
@@ -160,17 +164,17 @@
   <footer class="compas-footer">
     <nav class="nav p-2">
       
-        <a href="compas_view2.html" title="compas_view2" class="nav-link footer-link float-start text-left d-flex w-50" rel="prev">
+        <a href="../api.html" title="API Reference" class="nav-link footer-link float-start text-left d-flex w-50" rel="prev">
           <div class="nav-button p-2 m-2"><i class="fas fa-arrow-left"></i></div>
           <div class="nav-title flex-grow-1 align-self-center">
             <div class="nav-direction small font-weight-light">Previous</div>
-            compas_view2
+            API Reference
           </div>
         </a>
       
 
       
-        <a href="generated/compas_view2.app.app.App.html" title="App" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
+        <a href="generated/compas_view2.app.App.html" title="App" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
           <div class="nav-title footer-link flex-grow-1 align-self-center">
             <div class="nav-direction small font-weight-light">Next</div>
             App
@@ -216,7 +220,7 @@
   <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
   URL_ROOT          : '',
-  VERSION           : '0.1.0',
+  VERSION           : '0.4.0',
   COLLAPSE_INDEX    : false,
   FILE_SUFFIX       : '.html',
   HAS_SOURCE        : 'false',

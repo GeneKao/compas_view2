@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <title>compas_view2 - PointObject</title>
+  
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <meta name="author" content="" />
+  <meta name="author" content="compas-dev" />
   <meta name="description" content="" />
 
   <link rel="shortcut icon" href="../../_static/images/compas.ico" type="image/x-icon">
@@ -21,7 +23,7 @@
   
 
   
-    <link rel="prev" title="objects" href="../compas_view2.objects.html" />
+    <link rel="prev" title="compas_view2.objects" href="../compas_view2.objects.html" />
   
 
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
@@ -32,22 +34,31 @@
   <header id="header" class="compas-header d-flex align-items-center">
     <nav class="navbar navbar-expand navbar-dark col flex-column flex-md-row text-center">
       <!-- brand -->
-      <a class="navbar-brand" href="">
-        <img src="../../_static/images/compas_icon_white.png" alt="COMPAS Viewers 2" width="48px" height="48px" />
+      <a class="navbar-brand" href="https://compas.dev/compas_view2/">
+        <img src="../../_static/images/compas_icon_white.png" alt="COMPAS View2" width="48px" height="48px" />
       </a>
       <!-- brand -->
       <!-- primary -->
       <ul class="navbar-nav">
-        <li class="nav-item active"><a class="nav-link" href="">COMPAS Viewers 2</a></li>
+        <li class="nav-item active"><a class="nav-link" href="https://compas.dev/compas_view2/">COMPAS View2</a></li>
       </ul>
       <!-- primary -->
       <ul class="navbar-nav d-none d-md-flex ml-md-auto">
         <!-- version -->
         
+        <meta id="doc_versions" data-url="https://compas.dev/compas_view2/doc_versions.txt" data-docs="https://compas.dev/compas_view2/">
+        <li class="nav-item nav-versions dropdown">
+          <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            0.4.0
+          </a>
+          <div id="doc_version_list" class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions"></div>
+        </li>
+        
         <!-- version -->
         <!-- social -->
         <li class="nav-item">
-          <a class="nav-link" href="" target="_blank">
+          <a class="nav-link" href="https://github.com/compas-dev/compas_view2" target="_blank">
             <span class="fab fa-github fa-1x"></span>
           </a>
         </li>
@@ -73,9 +84,7 @@
             
               <li class="breadcrumb-item"><a href="../../api.html">API Reference</a></li>
             
-              <li class="breadcrumb-item"><a href="../compas_view2.html">compas_view2</a></li>
-            
-              <li class="breadcrumb-item"><a href="../compas_view2.objects.html">objects</a></li>
+              <li class="breadcrumb-item"><a href="../compas_view2.objects.html">compas_view2.objects</a></li>
             
             <li class="breadcrumb-item active" aria-current="page">PointObject</li>
           </ol>
@@ -84,12 +93,13 @@
 
         
         
-        <div class="detail section" id="pointobject">
+        <section class="detail" id="pointobject">
 <h1>PointObject</h1>
 <dl class="py class">
-<dt id="compas_view2.objects.PointObject">
-<em class="property">class </em><code class="sig-prename descclassname">compas_view2.objects.</code><code class="sig-name descname">PointObject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">is_selected</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_view2/src/compas_view2/objects.py#8"><span class="viewcode-link">[source]</span></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">compas_view2.objects.object.Object</span></code></p>
+<dt class="sig sig-object py" id="compas_view2.objects.PointObject">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">compas_view2.objects.</span></span><span class="sig-name descname"><span class="pre">PointObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_view2/blob/master/src/compas_view2/objects/pointobject.py#L5"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">compas_view2.objects.bufferobject.BufferObject</span></code></p>
+<p>Object for displaying COMPAS point geometry.</p>
 <p class="rubric">Methods</p>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -98,31 +108,46 @@
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.build.html#compas_view2.objects.PointObject.build" title="compas_view2.objects.PointObject.build"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build</span></code></a>(data, **kwargs)</p></td>
-<td><p></p></td>
+<td><p>Build an object class according to its corrensponding data type</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.create.html#compas_view2.objects.PointObject.create" title="compas_view2.objects.PointObject.create"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.draw.html#compas_view2.objects.PointObject.draw" title="compas_view2.objects.PointObject.draw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">draw</span></code></a>(shader)</p></td>
-<td><p></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.draw.html#compas_view2.objects.PointObject.draw" title="compas_view2.objects.PointObject.draw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">draw</span></code></a>(shader[, wireframe, is_lighted])</p></td>
+<td><p>Draw the object from its buffers</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.draw_instance.html#compas_view2.objects.PointObject.draw_instance" title="compas_view2.objects.PointObject.draw_instance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">draw_instance</span></code></a>(shader)</p></td>
-<td><p></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.draw_instance.html#compas_view2.objects.PointObject.draw_instance" title="compas_view2.objects.PointObject.draw_instance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">draw_instance</span></code></a>(shader[, wireframe])</p></td>
+<td><p>Draw the object instance for picking</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.edit.html#compas_view2.objects.PointObject.edit" title="compas_view2.objects.PointObject.edit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edit</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.edit.html#compas_view2.objects.PointObject.edit" title="compas_view2.objects.PointObject.edit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edit</span></code></a>([on_update])</p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.init.html#compas_view2.objects.PointObject.init" title="compas_view2.objects.PointObject.init"><code class="xref py py-obj docutils literal notranslate"><span class="pre">init</span></code></a>()</p></td>
-<td><p></p></td>
+<td><p>Initialize the object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.make_buffer_from_data.html#compas_view2.objects.PointObject.make_buffer_from_data" title="compas_view2.objects.PointObject.make_buffer_from_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">make_buffer_from_data</span></code></a>(data)</p></td>
+<td><p>Create buffers from point/line/face data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.make_buffers.html#compas_view2.objects.PointObject.make_buffers" title="compas_view2.objects.PointObject.make_buffers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">make_buffers</span></code></a>()</p></td>
+<td><p>Create all buffers from object’s data</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.register.html#compas_view2.objects.PointObject.register" title="compas_view2.objects.PointObject.register"><code class="xref py py-obj docutils literal notranslate"><span class="pre">register</span></code></a>(dtype, vtype)</p></td>
-<td><p>Register a virtual subclass of an ABC.</p></td>
+<td><p>Register an object class to its corrensponding data type</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.update.html#compas_view2.objects.PointObject.update" title="compas_view2.objects.PointObject.update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code></a>()</p></td>
+<td><p>Update the object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.update_buffer_from_data.html#compas_view2.objects.PointObject.update_buffer_from_data" title="compas_view2.objects.PointObject.update_buffer_from_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update_buffer_from_data</span></code></a>(data, buffer[, …])</p></td>
+<td><p>Update existing buffers from point/line/face data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_view2.objects.PointObject.update_buffers.html#compas_view2.objects.PointObject.update_buffers" title="compas_view2.objects.PointObject.update_buffers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update_buffers</span></code></a>()</p></td>
+<td><p>Update all buffers from object’s data</p></td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
-</div>
+</section>
 
         
       </main>
@@ -143,16 +168,25 @@
           <ul class="nav flex-column active">
 <li class="nav-item"><a class="nav-link reference internal" href="../../index.html">Introduction</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="../../gettingstarted.html">Getting Started</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="../../examples.html">Examples</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="../../tutorial.html">Tutorial</a></li>
 <li class="nav-item active"><a class="nav-link reference internal" href="../../api.html">API Reference</a><ul class="nav flex-column active">
-<li class="nav-item active"><a class="nav-link reference internal" href="../compas_view2.html">compas_view2</a><ul class="nav flex-column active">
-<li class="nav-item"><a class="nav-link reference internal" href="../compas_view2.app.html">app</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="../compas_view2.forms.html">forms</a></li>
-<li class="nav-item active"><a class="nav-link reference internal" href="../compas_view2.objects.html">objects</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="../compas_view2.shaders.html">shaders</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="../compas_view2.views.html">views</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="../compas_view2.app.html">compas_view2.app</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="../compas_view2.forms.html">compas_view2.forms</a></li>
+<li class="nav-item active"><a class="nav-link reference internal" href="../compas_view2.objects.html">compas_view2.objects</a><ul class="nav flex-column active">
+<li class="nav-item active"><a class="nav-link active current reference internal" href="#">PointObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.objects.LineObject.html">LineObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.objects.PolylineObject.html">PolylineObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.objects.BoxObject.html">BoxObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.objects.SphereObject.html">SphereObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.objects.TorusObject.html">TorusObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.objects.ArrowObject.html">ArrowObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.objects.NetworkObject.html">NetworkObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.objects.MeshObject.html">MeshObject</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_view2.objects.GridObject.html">GridObject</a></li>
 </ul>
 </li>
+<li class="nav-item"><a class="nav-link reference internal" href="../compas_view2.shaders.html">compas_view2.shaders</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="../compas_view2.views.html">compas_view2.views</a></li>
 </ul>
 </li>
 <li class="nav-item"><a class="nav-link reference internal" href="../../license.html">License</a></li>
@@ -178,11 +212,11 @@
   <footer class="compas-footer">
     <nav class="nav p-2">
       
-        <a href="../compas_view2.objects.html" title="objects" class="nav-link footer-link float-start text-left d-flex w-50" rel="prev">
+        <a href="../compas_view2.objects.html" title="compas_view2.objects" class="nav-link footer-link float-start text-left d-flex w-50" rel="prev">
           <div class="nav-button p-2 m-2"><i class="fas fa-arrow-left"></i></div>
           <div class="nav-title flex-grow-1 align-self-center">
             <div class="nav-direction small font-weight-light">Previous</div>
-            objects
+            compas_view2.objects
           </div>
         </a>
       
@@ -234,7 +268,7 @@
   <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
   URL_ROOT          : '',
-  VERSION           : '0.1.0',
+  VERSION           : '0.4.0',
   COLLAPSE_INDEX    : false,
   FILE_SUFFIX       : '.html',
   HAS_SOURCE        : 'false',
